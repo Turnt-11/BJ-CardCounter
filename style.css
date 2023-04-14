@@ -1,0 +1,138 @@
+body {
+    background: url("FELT.jpg") no-repeat center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #FFD700;
+}
+
+.card-games {
+    text-align: center;
+}
+
+#table1, #table2, #table3 {
+    width: 100%;
+    text-align: center;
+    border: 2px solid black;
+    background: rgba(34, 139, 34, 0.8);
+    color: white;
+}
+#table2 td, #table2 th {
+    font-size: 24px; /* Adjust the value as needed */
+}
+#table3 td, #table3 th {
+    font-size: 24px; /* Adjust the value as needed */
+}
+
+button {
+    width: 100%;
+    height: 65px;
+    background-color: rgb(69, 202, 69);
+    margin: 10px;
+    border: 2px solid black;
+    transition: transform 0.1s; /* Add a smooth transition effect */
+}
+
+button:hover {
+    width: 100%;
+    height: 65px;
+    background-color: rgb(100, 207, 100);
+    margin: 10px;
+}
+
+button:active { /* Apply the "pop" effect when the button is clicked */
+    transform: scale(0.95); /* Scale the button down to 95% of its original size */
+}
+
+#GoBack, #Reset {
+    width: 100%;
+    height: 35px;
+    color: white;
+    border: 2px solid black;
+}
+
+#GoBack {
+    background-color: rgb(82, 64, 44);
+}
+
+#Reset {
+    background-color: rgb(252, 0, 0);
+}
+
+#GoBack:hover {
+    background-color: rgb(131, 111, 90);
+}
+
+#Reset:hover {
+    background-color: rgb(214, 73, 73);
+}
+#C2, #C3, #C4, #C5, #C6, #C7, #C8, #C9, #C10, #CJ, #CQ, #CK, #CA {
+    background-color: white;
+    width: 75px;
+    height: 100px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    background-image: url('card_texture.jpg'); /* Add a card texture image here */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 0.1s ease;
+}
+
+#C2:hover, #C3:hover, #C4:hover, #C5:hover, #C6:hover, #C7:hover, #C8:hover, #C9:hover, #C10:hover, #CJ:hover, #CQ:hover, #CK:hover, #CA:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#C2:active, #C3:active, #C4:active, #C5:active, #C6:active, #C7:active, #C8:active, #C9:active, #C10:active, #CJ:active, #CQ:active, #CK:active, #CA:active {
+    transform: scale(0.95);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+    .card-shoe {
+      display: inline-block;
+      text-decoration: none;
+      margin-bottom: 15px;
+    }
+
+    .card-shoe button {
+      background-color: #3b3b3b;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-shoe button:before {
+      content: '';
+      background-color: white;
+      width: 45px;
+      height: 70px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      opacity: 0.2;
+    }
+
+    .card-shoe button:hover {
+      background-color: #505050;
+    }
+
+    .card-shoe h2 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.3;
+    }

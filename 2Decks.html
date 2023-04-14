@@ -1,0 +1,277 @@
+<html !DOCTYPE>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xxl-4" style="text-align:center;">
+                </div>
+                <div class="col-xxl-4" style="text-align:center;">
+                    <a href="index.html"><button id="GoBack">Go Back</button></a>
+                    <a href="2Decks.html"><button id="Reset">Reset Page</button></a>
+                    <h2>2 Decks</h2>
+                </div>
+                <div class="col-xxl-4" style="text-align:center;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-4" style="text-align:center;">
+                    
+                </div>
+                <div class="col-xxl-4" style="text-align:center;">
+                    <table id="table1">
+                                <script>
+                
+                                
+                                var Deck1 = ["2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A"];
+                                var Deck2 = ["2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A"];
+                                var Deck3 = ["2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A"];
+                                var Deck4 = ["2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A"];
+                                var Deck5 = ["2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A"];
+                                var Deck6 = ["2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A"];
+                                var Deck7 = ["2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A"];
+                                var Deck8 = ["2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A","2","3","4","5","6","7","8","9","10","J","Q","K","A"];
+                            
+                                var RC = 0;
+                                let Neg = [];
+                                let Pos = [];
+                
+                                var Two = Deck2.filter(TwoFilter);
+                                function TwoFilter(Two) {
+                                    return Two === "2";   
+                                }
+                                var Three = Deck2.filter(ThreeFilter);
+                                function ThreeFilter(Three) {
+                                    return Three === "3";   
+                                }
+                                var Four = Deck2.filter(FourFilter);
+                                function FourFilter(Four) {
+                                    return Four === "4";   
+                                }
+                                var Five = Deck2.filter(FiveFilter);
+                                function FiveFilter(Five) {
+                                    return Five === "5";   
+                                }
+                                var Six = Deck2.filter(SixFilter);
+                                function SixFilter(Six) {
+                                    return Six === "6";   
+                                }
+                                var Seven = Deck2.filter(SevenFilter);
+                                function SevenFilter(Seven) {
+                                    return Seven === "7";   
+                                }
+                                var Eight = Deck2.filter(EightFilter);
+                                function EightFilter(Eight) {
+                                    return Eight === "8";   
+                                }
+                                var Nine = Deck2.filter(NineFilter);
+                                function NineFilter(Nine) {
+                                    return Nine === "9";   
+                                }
+                                var Ten = Deck2.filter(TenFilter);
+                                function TenFilter(Ten) {
+                                    return Ten === "10";   
+                                }
+                                var Jack = Deck2.filter(JackFilter);
+                                function JackFilter(Jack) {
+                                    return Jack === "J";   
+                                }
+                                var Queen = Deck2.filter(QueenFilter);
+                                function QueenFilter(Queen) {
+                                    return Queen === "Q";   
+                                }
+                                var King = Deck2.filter(KingFilter);
+                                function KingFilter(King) {
+                                    return King === "K";   
+                                }
+                                var Ace = Deck2.filter(AceFilter);
+                                function AceFilter(Ace) {
+                                    return Ace === "A";   
+                                }
+                                function TwoFunction() {
+                                    if (Two.length > 0) { 
+                                    document.getElementById('2C8D').innerHTML = (Two.length) --;
+                                    document.getElementById('2C8D').innerHTML = document.getElementById('2C8D').innerHTML - 1;
+                                    document.getElementById('Pos').innerHTML = Pos.push("Pos");
+                                    document.getElementById('RC').innerHTML = document.getElementById("Pos").innerHTML - document.getElementById("Neg").innerHTML;
+                                } else if (Two.length <= 0) {
+                                    document.getElementById('2C8D').innerHTML = 0;
+                                }
+                                }
+                                function ThreeFunction() {
+                                    if (Three.length > 0) { 
+                                    document.getElementById('3CDHS').innerHTML = (Three.length) --;
+                                    document.getElementById('3CDHS').innerHTML = document.getElementById('3CDHS').innerHTML - 1;
+                                    document.getElementById('Pos').innerHTML = Pos.push("Pos");
+                                    document.getElementById('RC').innerHTML = document.getElementById("Pos").innerHTML - document.getElementById("Neg").innerHTML;
+                                } else if (Three.length <= 0) {
+                                    document.getElementById('3CDHS').innerHTML = 0;
+                                }
+                                }
+                                function FourFunction() {
+                                    if (Four.length > 0) { 
+                                    document.getElementById('4CDHS').innerHTML = (Four.length) --;
+                                    document.getElementById('4CDHS').innerHTML = document.getElementById('4CDHS').innerHTML - 1;
+                                    document.getElementById('Pos').innerHTML = Pos.push("Pos");
+                                    document.getElementById('RC').innerHTML = document.getElementById("Pos").innerHTML - document.getElementById("Neg").innerHTML;
+                                } else if (Four.length <= 0) {
+                                    document.getElementById('4CDHS').innerHTML = 0;
+                                }
+                                }
+                                function FiveFunction() {
+                                    if (Five.length > 0) { 
+                                    document.getElementById('5CDHS').innerHTML = (Five.length) --;
+                                    document.getElementById('5CDHS').innerHTML = document.getElementById('5CDHS').innerHTML - 1;
+                                    document.getElementById('Pos').innerHTML = Pos.push("Pos");
+                                    document.getElementById('RC').innerHTML = document.getElementById("Pos").innerHTML - document.getElementById("Neg").innerHTML;
+                                } else if (Five.length <= 0) {
+                                    document.getElementById('5CDHS').innerHTML = 0;
+                                }
+                                }
+                                function SixFunction() {
+                                    if (Six.length > 0) { 
+                                    document.getElementById('6CDHS').innerHTML = (Six.length) --;
+                                    document.getElementById('6CDHS').innerHTML = document.getElementById('6CDHS').innerHTML - 1;
+                                    document.getElementById('Pos').innerHTML = Pos.push("Pos");
+                                    document.getElementById('RC').innerHTML = document.getElementById("Pos").innerHTML - document.getElementById("Neg").innerHTML;
+                                } else if (Six.length <= 0) {
+                                    document.getElementById('6CDHS').innerHTML = 0;
+                                }
+                                }
+                                function SevenFunction() {
+                                    if (Seven.length > 0) { 
+                                    document.getElementById('7CDHS').innerHTML = (Seven.length) --;
+                                    document.getElementById('7CDHS').innerHTML = document.getElementById('7CDHS').innerHTML - 1;
+                                } else if (Seven.length <= 0) {
+                                    document.getElementById('7CDHS').innerHTML = 0;
+                                }
+                                }
+                                function EightFunction() {
+                                    if (Eight.length > 0) { 
+                                    document.getElementById('8CDHS').innerHTML = (Eight.length) --;
+                                    document.getElementById('8CDHS').innerHTML = document.getElementById('8CDHS').innerHTML - 1;
+                                } else if (Eight.length <= 0) {
+                                    document.getElementById('8CDHS').innerHTML = 0;
+                                }
+                                }
+                                function NineFunction() {
+                                    if (Nine.length > 0) { 
+                                    document.getElementById('9CDHS').innerHTML = (Nine.length) --;
+                                    document.getElementById('9CDHS').innerHTML = document.getElementById('9CDHS').innerHTML - 1;
+                                } else if (Nine.length <= 0) {
+                                    document.getElementById('9CDHS').innerHTML = 0;
+                                }
+                                }
+                                function TenFunction() {
+                                    if (Ten.length > 0) { 
+                                    document.getElementById('10CDHS').innerHTML = (Ten.length) --;
+                                    document.getElementById('10CDHS').innerHTML = document.getElementById('10CDHS').innerHTML - 1;
+                                    document.getElementById('Neg').innerHTML = Neg.push("Neg")
+                                    document.getElementById('RC').innerHTML = document.getElementById("Pos").innerHTML - document.getElementById("Neg").innerHTML;
+                                } else if (Ten.length <= 0) {
+                                    document.getElementById('10CDHS').innerHTML = 0;
+                                }
+                                }
+                                function JackFunction() {
+                                    if (Jack.length > 0) { 
+                                    document.getElementById('JCDHS').innerHTML = (Jack.length) --;
+                                    document.getElementById('JCDHS').innerHTML = document.getElementById('JCDHS').innerHTML - 1;
+                                    document.getElementById('Neg').innerHTML = Neg.push("Neg")
+                                    document.getElementById('RC').innerHTML = document.getElementById("Pos").innerHTML - document.getElementById("Neg").innerHTML;
+                                } else if (Jack.length <= 0) {
+                                    document.getElementById('JCDHS').innerHTML = 0;
+                                }
+                                }
+                                function QueenFunction() {
+                                    if (Queen.length > 0) { 
+                                    document.getElementById('QCDHS').innerHTML = (Queen.length) --;
+                                    document.getElementById('QCDHS').innerHTML = document.getElementById('QCDHS').innerHTML - 1;
+                                    document.getElementById('Neg').innerHTML = Neg.push("Neg")
+                                    document.getElementById('RC').innerHTML = document.getElementById("Pos").innerHTML - document.getElementById("Neg").innerHTML;
+                                } else if (Queen.length <= 0) {
+                                    document.getElementById('QCDHS').innerHTML = 0;
+                                }
+                                }
+                                function KingFunction() {
+                                    if (King.length > 0) { 
+                                    document.getElementById('KCDHS').innerHTML = (King.length) --;
+                                    document.getElementById('KCDHS').innerHTML = document.getElementById('KCDHS').innerHTML - 1;
+                                    document.getElementById('Neg').innerHTML = Neg.push("Neg")
+                                    document.getElementById('RC').innerHTML = document.getElementById("Pos").innerHTML - document.getElementById("Neg").innerHTML;
+                                } else if (King.length <= 0) {
+                                    document.getElementById('KCDHS').innerHTML = 0;
+                                }
+                                }
+                                function AceFunction() {
+                                    if (Ace.length > 0) { 
+                                    document.getElementById('ACDHS').innerHTML = (Ace.length) --;
+                                    document.getElementById('ACDHS').innerHTML = document.getElementById('ACDHS').innerHTML - 1;
+                                    document.getElementById('Neg').innerHTML = Neg.push("Neg")
+                                    document.getElementById('RC').innerHTML = document.getElementById("Pos").innerHTML - document.getElementById("Neg").innerHTML;
+                                } else if (Ace.length <= 0) {
+                                    document.getElementById('ACDHS').innerHTML = 0;
+                                }
+                                }
+                            </script>
+                
+                
+                
+                            <tr><td><button id="C2" onclick="TwoFunction()">2</button></td>   
+                            <td><button id="C3" onclick="ThreeFunction()">3</button></td>
+                            <td><button id="C4" onclick="FourFunction()">4</button></td>
+                            <td><button id="C5" onclick="FiveFunction()">5</button></td></tr>
+                            <tr><td><button id="C6" onclick="SixFunction()">6</button></td>
+                            <td><button id="C7" onclick="SevenFunction()">7</button></td>
+                            <td><button id="C8" onclick="EightFunction()">8</button></td>
+                            <td><button id="C9" onclick="NineFunction()">9</button></tr>
+                            <tr><td><button id="C10" onclick="TenFunction()">10</button></td>
+                            <td><button id="CJ" onclick="JackFunction()">J</button></td>
+                            <td><button id="CQ" onclick="QueenFunction()">Q</button></td>
+                            <td><button id="CK" onclick="KingFunction()">K</button></td></tr>
+                            <tr><td><button id="CA" onclick="AceFunction()">A</button></td></tr>     
+                        </table>
+                    <div id="tablediv2">
+                            <table id="table2">
+                            <tr><th>Card #</th><th></th><th>Remaining</th></tr>    
+                            <tr><td>2</td><td>-</td><td id="2C8D">8</td></tr>
+                            <tr><td>3</td><td>-</td><td id="3CDHS">8</td></tr>
+                            <tr><td>4</td><td>-</td><td id="4CDHS">8</td></tr>
+                            <tr><td>5</td><td>-</td><td id="5CDHS">8</td></tr>
+                            <tr><td>6</td><td>-</td><td id="6CDHS">8</td></tr>
+                            <tr><td>7</td><td>-</td><td id="7CDHS">8</td></tr>
+                            <tr><td>8</td><td>-</td><td id="8CDHS">8</td></tr>
+                            <tr><td>9</td><td>-</td><td id="9CDHS">8</td></tr>
+                            <tr><td>10</td><td>-</td><td id="10CDHS">8</td></tr>
+                            <tr><td>J</td><td>-</td><td id="JCDHS">8</td></tr>
+                            <tr><td>Q</td><td>-</td><td id="QCDHS">8</td></tr>
+                            <tr><td>K</td><td>-</td><td id="KCDHS">8</td></tr>
+                            <tr><td>A</td><td>-</td><td id="ACDHS">8</td></tr>
+                        </table>
+                        </div>
+</div>
+                <div class="col-xxl-4" style="text-align:center;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-4" style="text-align:center;">
+                </div>
+                <div class="col-xxl-4" style="text-align:center;">
+                        <div id="tablediv3">
+                            <table id="table3">
+                                <tr><th>Running Count</th></tr>
+                                <tr><td id="RC">0</td></tr>
+                                <tr><td id="Neg" hidden>0</td></tr>
+                                <tr><td id="Pos" hidden>0</td></tr>
+                            </table>
+                        </div>
+    </div>
+                <div class="col-xxl-4" style="text-align:center;">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
