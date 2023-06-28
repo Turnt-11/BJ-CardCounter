@@ -76,7 +76,7 @@ button:active { /* Apply the "pop" effect when the button is clicked */
     border: 2px solid black;
     border-radius: 8px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-    background-image: url('card_texture.jpg'); /* Add a card texture image here */
+    /* background-image: url('card_texture.jpg'); /* Add a card texture image here */
     background-size: cover;
     display: flex;
     justify-content: center;
