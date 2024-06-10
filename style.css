@@ -1,5 +1,5 @@
 body {
-    background: url("FELT.jpg") no-repeat center;
+    background: url("FELT.jpg") repeat center;
     background-size: cover;
     font-family: Arial, sans-serif;
 }
